@@ -2,6 +2,7 @@
 <html>
 <head>
 <style>
+
 #contenido
 {
 font-family:Georgia, "Times New Roman", Times, serif;
@@ -54,53 +55,97 @@ background-color:#92C4FA;
 	font-weight: 100;
 	color: #FFF;
 }
+#logo{
+	position:static;
+	alignment-adjust:auto;	
+}
+#boton{
+	position:fixed;
+	alignment-adjust:central;
+}
 </style>
 <meta charset="utf-8">
 <title>Prinmera Aplicacion</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="jquery-mobile/jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css"/>
 <link href="jquery-mobile/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
+<style type="text/css">
+#ENTRAR {
+	position: absolute;
+	width: 69px;
+	height: 23px;
+	z-index: 1;
+	left: 70px;
+	top: 251px;
+}
+</style>
 <script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
 <script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
 <script src="phonegap.js"></script>
 </head> 
 <body> 
 
+<div data-role="page" id="logo">
+  <p><img src="logocb.png">
+  </p>
+  <div id="ENTRAR"><a href="#Principal"><strong>ENTRAR</strong></a></div>
+</div>
 <div data-role="page" id="Principal"><!--comprtamiento de pagina-->
-	<div data-role="header">
-		<h1>Centro de Bachillerato Tecnológico industrial y de servicios No. 86</h1>
-        
+  <div data-role="header">
+  <h1>C.B.T.i.s. #86</h1>
+		<h1>Técnico en Programación</h1> 
 	</div>
 	<div data-role="content">	
+  		<div data-role="collapsible">
+			<h1> Justificación</h1>
+				<div style="width:60%; float:left; padding:10px;">
+  				<p>La carrera de Técnico en programación ofrece las competencias profesionales que permiten al estudiante 				realizar actividades dirigidas a: analizar, diseñar, desarrollar , instalar y mantener software de aplicación tomando como base los requerimientos del usuario.</p>
+  				<p>Todas estas competencias posibilitan al egresado su incorporación al mundo laboral o desarrollar procesos productivos independientes, de acuerdo con sus intereses profesionales y necesidades de su entorno social.</p>
+                  <p>Permite al técnico incorporarse al ámbito laboral en diversos sitios de inserción como:<br>
+                    <ul><li>Edición de Software y edición de software integrada con la reproducción</li>
+                    <li>Servicios de diseño de sistemas de cómputo y servicios relacionados</li>
+                    <li>Escuelas de computación del sector privado</li>
+                    <li>Escuelas de computación del sector publico</li>
+                    <li>Edición y difusión de contenido exclusivamente a través de Internet</li>
+                    <li>Servicios de búsqueda en la red</li></ul>
+				</div>
+		</div>
+	</div>
+
+<div data-role="content">	
   <div data-role="collapsible">
-<h1> Técnico en Programación</h1>
+<h1>Perfil de egreso</h1>
 
 <div style="width:60%; float:left; padding:10px;">
-<table width="200" border="1">
-  <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-</table>
-<p>&nbsp;</p>
-<table width="666" border="1" align="center">
-<tr> <td width="290" align="center" bgcolor="#990000" id="titmod">&nbsp;</td> </tr>
-</table>
-
+  <p>La formación que ofrece la carrera de Técnico en programación permite al egresado, a través de la articulación de saberes de diversos campos, realizar actividades dirigidas a la:</p>
+  <ul>
+    <li>Instalación y desarrollo de software de aplicación utilizando programación estructurada y orientada a objetos en ambientes web y móviles, con almacenamiento persistente de datos</li>
+    <li>Así como la configuración y administración de plataforma e-learning y Comercio electrónico.</li></ul>
+    <p>Durante el proceso de formación de los cinco módulos, el estudiante desarrollará o reforzará:
+      Las siguientes competencias profesionales: </p>
+    <ul>
+      <li> Desarrolla e instala software de aplicación utilizando programación estructurada, con almacenamiento persistente de los datos</li>
+      <li>Desarrolla software de aplicación utilizando programación orientada a objetos, con almacenamiento persistente de los datos</li>
+      <li>Desarrolla aplicaciones web y móviles        </li>
+      <li>Administra sistemas operativos, aplicaciones y servicios </li>
+      <li>Desarrolla, administra y configura soluciones de e – learning y comercio electrónico.</li></ul>
+      <p>Y las competencias de empleabilidad y productividad:</p>
+        <ul><li>Trabajo en equipo</li>
+        <li>Comunicación efectiva</li>
+        <li>Adaptabilidad</li>
+        <li>Atención al proceso</li>
+        <li>Orientación al logro</li>
+        <li>Planeación y organización</li>
+        <li>Orientación a la mejora continua</li>
+        <li>Atención al cliente</li>
+        <li>Ética profesional</li></ul>
+        <p>El egresado de la carrera de Técnico en programación está en posibilidades de demostrar las competencias genéricas como:</p>
+        <ul><li>Escucha, interpreta y emite mensajes pertinentes en distintos contextos mediante la utilización de medios, códigos y herramientas apropiados</li>
+        <li>Desarrolla innovaciones y propone soluciones a problemas a partir de métodos establecidos</li>
+        <li>Aprende por iniciativa e interés propio a lo largo de la vida</li>
+        <li>Participa y colabora de manera efectiva en equipos</li>
+    </ul>
+    
 </div>
 
 
@@ -111,16 +156,55 @@ background-color:#92C4FA;
 
 </div>
 
-<hr>
+
+<div data-role="content">	
+  <div data-role="collapsible">
+<h1>Mapa de Competencias</h1>
+
+<div style="width:60%; float:left; padding:10px;">
+ competencias
+   <table width="200" border="1">
+     <tr>
+       <td rowspan="10"><img src="mac-computadora-b_659x460.jpg.png" alt="Técnico en Programación" width="203" height="167"></td>
+       <td><a href="#smod1"><img src="progestruc.gif" alt="Desarrolla software utilizando programación estructurada" width="100" height="100"></a></td>
+       <td><img src="dbsimples.jpg" alt="Diseña y administra bases de datos simples" width="100" height="100"></td>
+     </tr>
+     <tr>
+       <td><img src="poo.png" alt="Desarrolla software de aplicación utilizando programación orientada a objetos" width="100" height="100"></td>
+       <td><img src="dbcomplejas.gif" alt="Diseña y administra bases de datos avanzadas" width="100" height="100"></td>
+     </tr>
+     <tr>
+       <td><img src="apliweb.jpg" alt="Desarrolla aplicaciones web" width="100" height="100"></td>
+       <td><img src="aplimovil.png" alt="Desarrolla aplicaciones móviles" width="100" height="100"></td>
+     </tr>
+     <tr>
+       <td><img src="sistop.jpeg" alt="Administra sistemas operativos" width="100" height="100"></td>
+       <td><img src="sistopdered.png" alt="Instala y configura aplicaciones y servicios" width="100" height="100"></td>
+     </tr>
+     <tr>
+       <td><img src="elearning.jpg" alt="Administra y configura plataformas de e – learning" width="100" height="100"></td>
+       <td><img src="ecommerce.jpg" alt="Desarrolla soluciones de comercio electrónico" width="100" height="100"></td>
+     </tr>
+     
+   </table>
+</div>
+
+
+
+
+</div>
+
+
+</div>
+
+<!--<hr>
 
 		<ul data-role="listview">
-			<li><a href="#PaginaMI">Modulo I</a></li>
-            <li><a href="#PaginaMII">Modulo II</a></li>
-			<li><a href="#PaginaMIII">Modulo III</a></li>
+			<li><a href="#PaginaMI">Mapa de Competencias</a></li>
 		</ul>
         		
 
-	</div>
+	</div>-->
 <div data-role="footer" align="center">
      <div>
       <img src="imagenes/persona_azul.png" width="46" height="46">
@@ -131,82 +215,14 @@ background-color:#92C4FA;
 	</div>
 </div>
 
-<div data-role="page" id="PaginaMI"  data-add-back-btn="true">
+<div data-role="page" id="smod1"  data-add-back-btn="true">
 	<div data-role="header">
-		<h1>Página dos</h1>
+		<h1>Módulo I - Desarrolla e instala software de aplicación utilizando programación estructurada, con almacenamiento persistente de los datos</h1>
 	</div>
-	<div data-role="content">
-     
- 
-	  <table id="contenido" width="" border="1" align="center">
-            
-		    <tr>
-		      <th colspan="4" align="center">COMPETENCIAS CONTENIDOS POR DESARROLLAR</th>
-	        </tr>
-		    <tr align="center" class="alto">
-		      <td>No.</td>
-		      <td>Pofesionales</td>
-		      <td>Submódulo</td>
-		      <td>Situaciones</td>
-	        </tr>
-		    <tr>
-		      <td width="36">1</td>
-		      <td width="179">Soluciona  problemas </td>
-		      <td width="91">1</td>
-		      <td width="258">Por  medio de algoritmos </td>
-	        </tr>
-		    <tr class="alt">
-		      <td>2</td>
-		      <td>Desarrolla  diagramas de flujo del algoritmos </td>
-		      <td>1</td>
-		      <td>Utilizando  diagramas lineales y/o modular </td>
-	        </tr>
-		    <tr>
-		      <td>3</td>
-		      <td>Elabora  pseudocódigo de los diagramas de flujo </td>
-		      <td>1</td>
-		      <td>Utilizando  conceptos lingüísticos y/o matemáticos en la solución de los problemas </td>
-	        </tr>
-		    <tr class="alt">
-		      <td>4</td>
-		      <td>Desarrolla  el código en un lenguaje de programación estructurado </td>
-		      <td>1</td>
-		      <td>De  acuerdo a las sintaxis de los lenguajes estructurados </td>
-	        </tr>
-		    <tr>
-		      <td>5</td>
-		      <td>Elabora  un diseño conceptual de una base de datos </td>
-		      <td>2</td>
-		      <td><p>Empleando el modelo entidad  relación con un máximo de 7 entidades </p>
-Utilizado comunicación continua y efectiva con  el usuario en el diseño conceptual de la base de datos </td>
-	        </tr>
-		    <tr class="alt">
-		      <td>6</td>
-		      <td>Elabora  el diseño lógico de una base de datos con implementación en un sistema gestor  de base de datos </td>
-		      <td>2</td>
-		      <td>Utilizando  herramientas o instrumentos de diseño </td>
-	        </tr>
-		    <tr>
-		      <td>7</td>
-		      <td>Genera  consultas </td>
-		      <td>2</td>
-		      <td>Utilizando  un lenguaje de consultas estructurado </td>
-	        </tr>
-		    <tr class="alt">
-		      <td>8</td>
-		      <td>Administra  una base de datos </td>
-		      <td>2</td>
-		      <td><p>Utilizando un SMBD </p>
-Actualizando datos y estructura de la BD,  depurando registros </td>
-	        </tr>
-            
-      </table>
- 
- 
-      </div>
+	<div data-role="content"><img src="smod1.png" width="500" height="500"></div>
     
 	<div data-role="footer">
-		<h4>Pie de página</h4>
+		<h4>C.B.T.i.s. No.86</h4>
 	</div>
 </div>
 
